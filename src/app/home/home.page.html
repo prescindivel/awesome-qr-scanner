@@ -1,14 +1,23 @@
-<ion-header>
+<ion-header no-border translucent>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      <ion-text color="light">
+        Scan QR Code
+      </ion-text>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content fullscreen>
+  <div class="mask">
+    <ion-text color="light">
+      <h2 text-center><b>Looking QR Code…</b></h2>
+    </ion-text>
+
+    <div class="mask-center"></div>
+
+    <ion-text color="light">
+      <h6 text-center>Point the phone's camera <br> at the QR Code</h6>
+    </ion-text>
   </div>
 </ion-content>
