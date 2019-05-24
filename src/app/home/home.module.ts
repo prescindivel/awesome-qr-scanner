@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { QRScanner } from '@ionic-native/qr-scanner/ngx';
+
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -18,6 +20,7 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [QRScanner]
 })
-export class HomePageModule {}
+export class HomePageModule { }
